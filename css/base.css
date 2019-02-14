@@ -42,7 +42,7 @@ body {
     position: absolute;
     width: 107px;
     height: 5px;
-    background-color: #707070;
+    background-color: #575757;
     top:20px;
     left: 18px
 }
@@ -52,22 +52,25 @@ body {
     position: absolute;
     width: 107px;
     height: 5px;
-    background-color: #707070;
+    background-color: #575757;
     top: 83px;
     left: 18px;
 }
 
 .header .wrap-title > .arrow{
-    width: 25px; 
-    height: 25px; 
+    width: 18px; 
+    height: 18px; 
     position: absolute;
-    border-top: 5px solid #575757;
-    border-right: 5px solid #575757;
-    transform:rotate(45deg);
-    left: -28px;
-    top: 40px;
+    border-top: 3px solid #8A8C8D;
+    border-right: 3px solid #8A8C8D;
+    transform:rotate(225deg);
+    left: -18px;
+    top: 44px;
 } 
 
+
+
+/* Responsive  */
 @media (max-width: 600px){
     .header .wrap-title > .title{
         font-size: 32px;
@@ -84,22 +87,52 @@ body {
     .header .wrap-title > .title{
         font-size: 28px;
     } 
+
+    .header .wrap-title > .arrow{
+        left: -10px;
+    }
 }
 
 @media (max-width: 450px){
     .header .wrap-title > .title{
         font-size: 24px;
     } 
-    .header .wrap-title > .arrow{
-        left: -24px;
+    .header .wrap-title > .title::after{
+        height: 4px;
+    }
+    .header .wrap-title > .title::before{
+        height: 4px;
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 380px){
+    .header{
+        height: 140px;
+    }
+    .header .wrap-title > .arrow{
+        left: initial;
+        transform: rotate(135deg); 
+        top: 100px;
+        cursor: pointer;
+    } 
+    
+    .header .wrap-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .header .wrap-title > .title{
         font-size: 18px;
+        margin-left: 0; 
     } 
-    /* .header .wrap-title > .arrow{
-        left: -24px;
-    } */
+    .header .wrap-title > .title::after{
+        height: 4px;
+        left: 50%;
+        margin-left: -55px;
+    }
+    .header .wrap-title > .title::before{
+        height: 4px;
+        left: 50%;
+        margin-left: -55px;
+    }
 }
