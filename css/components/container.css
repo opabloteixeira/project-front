@@ -1,0 +1,7 @@
+.container{
+    margin: 0 auto;
+    max-width: 1330px;
+    position: relative;
+    width: 90%;
+    /* background-color: #999500; */
+}

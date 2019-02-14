@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: gotham-bold;
+    src: url(./fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: gotham-book;
+    src: url(./fonts/Gotham-Book.otf);
+}
+
+
+body {
+    background-color: #49ACD6;
+}
+
+.header{
+    height: 107px;
+    width: 100%;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #fff, #E4E4E4);
+}
+
+.wrap-title{
+    height: 107px;
+    display: flex;
+    align-items: center;
+}
+
+.header .wrap-title > .title{
+    font-size: 39px;
+    color: #575757;
+    float: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: gotham-book, "Roboto", sans-serif;;
+    margin-left: 18px
+}
+
+.header .wrap-title > .title::before{
+    content: "";
+    position: absolute;
+    width: 107px;
+    height: 5px;
+    background-color: #707070;
+    top:20px;
+    left: 18px
+}
+
+.header .wrap-title > .title::after{
+    content: "";
+    position: absolute;
+    width: 107px;
+    height: 5px;
+    background-color: #707070;
+    top: 83px;
+    left: 18px;
+}
+
+.header .wrap-title > .arrow{
+    width: 25px; 
+    height: 25px; 
+    position: absolute;
+    border-top: 5px solid #575757;
+    border-right: 5px solid #575757;
+    transform:rotate(45deg);
+    left: -28px;
+    top: 40px;
+} 
+
+@media (max-width: 600px){
+    .header .wrap-title > .title{
+        font-size: 32px;
+    } 
+}
+
+@media (max-width: 550px){
+    .header .wrap-title > .title{
+        font-size: 28px;
+    } 
+}
+
+@media (max-width: 550px){
+    .header .wrap-title > .title{
+        font-size: 28px;
+    } 
+}
+
+@media (max-width: 450px){
+    .header .wrap-title > .title{
+        font-size: 24px;
+    } 
+    .header .wrap-title > .arrow{
+        left: -24px;
+    }
+}
+
+@media (max-width: 320px){
+    .header .wrap-title > .title{
+        font-size: 18px;
+    } 
+    /* .header .wrap-title > .arrow{
+        left: -24px;
+    } */
+}
