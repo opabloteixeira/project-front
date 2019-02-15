@@ -1,0 +1,260 @@
+.header{
+    height: 107px;
+    width: 100%;
+    overflow:hidden;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #fff, #E4E4E4);
+}
+
+.wrap-title{
+    height: 107px;
+    display: flex;
+    align-items: center;
+}
+
+.header .wrap-title > .title{
+    font-size: 39px;
+    color: #575757;
+    float: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: gotham-book, "Roboto", sans-serif;
+    margin-left: 18px;
+}
+
+.header .wrap-title > .title::before{
+    content: "";
+    position: absolute;
+    width: 107px;
+    height: 5px;
+    background-color: #575757;
+    top:20px;
+    left: 18px
+}
+
+.header .wrap-title > .title::after{
+    content: "";
+    position: absolute;
+    width: 107px;
+    height: 5px;
+    background-color: #575757;
+    top: 83px;
+    left: 18px;
+}
+
+.header .wrap-title > .arrow{
+    width: 18px; 
+    height: 18px; 
+    position: absolute;
+    border-top: 3px solid #8A8C8D;
+    border-right: 3px solid #8A8C8D;
+    transform:rotate(225deg);
+    left: -18px;
+    top: 44px;
+} 
+
+/* menu */
+.header .item.-menu {
+    display: none;
+}
+
+.header  .navigation {
+    font-size: 18px;
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 107px;
+  }
+  
+  .header .list {
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .header .item{
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+
+  .header .item.-last {
+    margin-right: 5px;
+  }
+  
+  .header .action {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+  
+  .header .item .menu{
+    width: 34px;
+    height: 40px;
+    position: absolute;
+    top: -6px
+  } 
+
+  .header .item3 .pin{
+    width: 34px;
+    height: 40px;
+  } 
+
+
+  .header .item3{
+    display: inline-block;
+  } 
+  .header .item4{
+    display: none;
+  } 
+
+
+
+ 
+
+
+
+
+
+
+/* Responsive  */
+@media (max-width: 800px){
+
+    .header .wrap-title > .title{
+        font-size: 30px;
+    } 
+
+}
+
+
+@media (max-width: 700px){
+
+    .header .navigation .-item1{
+        display: none;
+    }
+
+    .header .navigation .-item2{
+        display: none;
+    }
+
+    .header .navigation .item3{
+        margin-right: 52px;
+    }
+    .header .navigation .item4{
+        display: inline-block;
+    }
+
+    .header .wrap-title > .title{
+        font-size: 30px;
+    } 
+
+}
+
+
+
+
+@media (max-width: 600px){
+
+    .header .wrap-title > .title{
+        font-size: 28px;
+    } 
+
+    .header .navigation .item3{
+        margin-right: 28px;
+    }
+}
+
+
+
+
+@media (max-width: 550px){
+    
+    .header .wrap-title > .title{
+        font-size: 25px;
+    } 
+
+    .header .wrap-title > .arrow{
+        left: -10px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 450px){
+    .header .wrap-title > .title{
+        font-size: 22px;
+    } 
+    .header .wrap-title > .title::after{
+        height: 4px;
+    }
+    .header .wrap-title > .title::before{
+        height: 4px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 390px){
+    .header{
+        height: 140px;
+    }
+    .header .wrap-title > .arrow{
+        left: initial;
+        transform: rotate(135deg); 
+        top: 100px;
+        cursor: pointer;
+    } 
+    .header .wrap-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .wrap-title > .title{
+        margin-left: 0; 
+        font-size: 20px;
+    } 
+    .header .wrap-title > .title::after{
+        height: 4px;
+        left: 50%;
+        margin-left: -55px;
+    }
+    .header .wrap-title > .title::before{
+        height: 4px;
+        left: 50%;
+        margin-left: -55px;
+    }
+    .header .navigation .item3{
+        left: -4px;
+        top: 10px;
+        position: absolute;
+    }
+    .header .navigation .item3 .pin{
+        width: 28px;
+        height: 34px; 
+    }
+    .header .navigation .item4{
+        top: 10px;
+        right: -4px;    
+        position: absolute;
+    }
+
+    .header .navigation .item4 .menu{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 240px){
+    .header .wrap-title > .title{
+        font-size: 16px;
+    }
+
+}

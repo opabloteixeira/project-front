@@ -4,25 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prodigious</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Teste Frontend Prodigious</title>
+
+    <!-- CSS Calls -->
     <link rel="stylesheet" href="css/generic/reset.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base/style.css">
+    <link rel="stylesheet" href="css/objects/header.css">
+    <link rel="stylesheet" href="css/objects/menu.css">
+    <link rel="stylesheet" href="css/objects/gallery.min.css">
+    <link rel="stylesheet" href="css/objects/gallery.theme.css">
     <link rel="stylesheet" href="css/components/container.css">
+    <!-- End CSS Calls -->
 </head>
 <body>
+
+<!-- Header -->
     <header class="header">
         <div class="container">
+            <nav class="navigation">
+                    <ul class="list">
+                        <li class="item  -item1">
+                        <a class="action" target="_blank" href="http://prodigious.com">Site da Prodigious</a>
+                        </li>
+                        
+                        <li class="item -item2">
+                            <a class="action" target="_blank" href="#">Contato</a>
+                        </li>
+
+                        <li class="item3">
+                        <a class="action" href="#"><img class="pin" src="./img/pin.png" alt="Um ícone que mostra a localização do usuário"></a>
+                        </li>
+
+                        <li class="item4"> 
+                        <img class="menu" id="flag-menu" src="./img/menu.png" alt="Um ícone que mostra a localização do usuário">
+                        </li>  
+                    </ul>
+            </nav>
+
+            <!-- Logo -->
             <div class="wrap-title">
                 <span class="arrow"></span> 
                 <h1 class="title">
                     teste prodigious
                 </h1>
             </div>
+            <!-- End Logo -->
+
         </div>
     </header>
+<!-- End Header -->
+
+
+
+
+<!-- Menu mobile -->
+    <div id="flag-menu-x" class="menu-mobile">
+        <div class="bx"> <!-- apagar class dps -->
+            <button id="flag-menu" class="x"> <!-- botão x -->
+                <div class="line li1"></div>
+                <div class="line li2"></div>
+                <div class="line li3"></div>
+            </button>
+        </div>	 
+
+        <div class="item-menu bx">
+            <p><a class="link-menu" href="http://prodigious.com">Site da Prodigious</a></p>
+        </div>
+
+        <div class="item-menu bx">
+            <p><a class="link-menu" href="http://prodigious.com">Contato</a></p>
+        </div>
+    </div>
+<!-- End menu mobile -->
+
+
+
+<!-- Modal client 1 -->
+<div id="client1"> 
+
+    <div class="bx" > 
+        <button id="b1" class="x"> <!-- botão x -->
+            <div class="line li1"></div>
+            <div class="line li2"></div>
+            <div class="line li3"></div>
+        </button>
+
+        <div class="title">
+            <p>Modal que abre com o cliente 1</p>
+        </div>
+    </div>
+
+    <div class="text">
+        <p>Curabitur elementum elit at pulvinar bibendum. Nunc porttitor orci cursus tortor accumsan vulputate. Donec mollis ipsum a consequat aliquam. Donec molestie tellus nec neque aliquam tristique. Vivamus tristique sapien non arcu aliquam venenatis. Maecenas non diam id est cursus imperdiet nec et ipsum. Etiam nec velit fringilla nisi facilisis hendrerit vel nec erat.</p>
+        <br>
+        <p>Aenean vel leo et magna posuere dapibus. Ut placerat risus sapien, blandit tempus neque laoreet eget. Cras mollis tincidunt magna vel aliquet. Pellentesque sed purus at massa congue lobortis. Nunc risus magna, condimentum ultricies efficitur eu, eleifend eu enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec aliquet malesuada ante. Donec eget ipsum volutpat, pellentesque enim eget, bibendum lacus. Integer quis ipsum nec sapien rutrum euismod. Duis sed congue tellus. Maecenas quis nulla gravida ex elementum vehicula vitae id elit. Quisque at nunc eu massa fringilla sagittis. Donec rutrum nisl ut mi commodo rhoncus. Quisque fringilla quis nunc ac suscipit. Sed a volutpat lorem, et accumsan enim. Phasellus id nulla consectetur sem vulputate scelerisque.</p>
+    </div>
+
+</div>
+<!-- End Modal client 1 -->
+
+
+
+
+    
+
+
+
+
+    <!-- Gallery -->
     <div class="container">
 
+            <div class="gallery autoplay items-4">
+              <div id="item-1" class="control-operator"></div>
+              <div id="item-2" class="control-operator"></div>
+              <div id="item-3" class="control-operator"></div>
+              <div id="item-4" class="control-operator"></div>
+          
+              <figure class="item">
+                <img class="image" id="img1" src="./img/item (1).png" alt="Logo tipo do banco bradesco">
+              </figure>
+          
+              <figure class="item">
+                <img class="image" id="img2" src="./img/item (2).png" alt="Logotipo do Comitê Olimpico Brasileiro">
+              </figure>
+          
+              <figure class="item">
+               <img class="image" id="img3" src="./img/item (3).png" alt="Logotipo do Fastfood Habibis">
+              </figure>
+
+              <figure class="item">
+                <img class="image" id="img4" src="./img/item (4).png" alt="Logotipo da empresa Nestle">
+              </figure>
+          
+              <div class="controls">
+                  
+                <a href="#item-1" class="control-button">• <span class="title-controls">Slide1</span></a>
+                <a href="#item-2" class="control-button">• <span class="title-controls">Slide2</span></a>
+                <a href="#item-3" class="control-button">• <span class="title-controls">Slide3</span></a>
+                <a href="#item-4" class="control-button">• <span class="title-controls">Slide4</span></a>
+              </div>
+            </div>
     </div>
-    
+    <!-- End Gallery -->
+
+
+    <!-- javascript calls -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="src/base/index.js"></script>
+    <!-- End javascript calls -->
 </body>
 </html>
