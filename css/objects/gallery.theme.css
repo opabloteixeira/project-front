@@ -44,12 +44,12 @@
   text-decoration: none;
   transition: color .1s;
   position: relative;
-  margin: -2px 7%;
+  margin: -2px 6%;
 }
 .gallery .title-controls{
   font-size: 10px;
   position: absolute;
-  left: -5px;
+  left: 0px;
   bottom: -17px;
 }
 
