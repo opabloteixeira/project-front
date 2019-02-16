@@ -17,11 +17,13 @@
 
 .gallery .item .image{
   cursor: pointer;
+  /* z-index: 9; */
 }
 
 .gallery .item {
-  /* height: 300; */
+  /* height: 400px; */
   overflow: hidden;
+  /* z-index: 1; */
   text-align: center;
   /* background: #4d87e2; */
 }

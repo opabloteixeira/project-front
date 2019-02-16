@@ -26,7 +26,7 @@ body {
 	height: 100%;
 	background-color: white;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 } 
 
  .title{
@@ -35,12 +35,16 @@ body {
 }
 
 .text{
-	width: 96%;
-	padding: 2% 0%;
+	width: 92%;
+	padding: 2% 2%;
 	color: #9A9A9A;
 	margin-right: 2%; 
 	margin-left: 2%;
 	border-top: groove;
+}
+
+.text-bold{
+	font-weight: bold;
 }
 
 .video{
