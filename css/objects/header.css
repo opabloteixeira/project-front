@@ -12,13 +12,19 @@
     align-items: center;
 }
 
+ 
+.header .wrap-title .title > .title-bold{
+    font: inherit;
+    font-family: "GothamBold",sans-serif;
+} 
+
+
 .header .wrap-title > .title{
     font-size: 39px;
     color: #575757;
     float: left;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: gotham-book, "Roboto", sans-serif;
     margin-left: 18px;
 }
 
@@ -112,15 +118,13 @@
 
 
 
- 
-
 
 
 
 
 
 /* Responsive  */
-@media (max-width: 800px){
+@media (max-width: 825px){
 
     .header .wrap-title > .title{
         font-size: 30px;
@@ -129,7 +133,7 @@
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 750px){
 
     .header .navigation .-item1{
         display: none;

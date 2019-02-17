@@ -1,12 +1,16 @@
-
 @font-face {
-    font-family: gotham-bold;
-    src: url(./fonts/Gotham-Bold.otf);
+	font-family: 'GothamBook';
+	src: url('../fonts/Gotham-Book.otf'); 
+	font-style: normal;
+	font-weight : normal;
 }
 
+
 @font-face {
-    font-family: gotham-book;
-    src: url(./fonts/Gotham-Book.otf);
+	font-family: 'GothamBold';
+	src: url('../fonts/Gotham-Bold.otf'); 
+	font-style: normal;
+	font-weight : bold;
 }
 
 a{
@@ -15,8 +19,9 @@ a{
 }
 
 body {
-    background-color: #49ACD6;
-    font-family: gotham-book, "Roboto", sans-serif;
+    
+	font-family: "GothamBook",sans-serif;
+	background-color: #49ACD6;
 }
 
 
@@ -29,10 +34,12 @@ body {
 	z-index: 2;
 } 
 
- .title{
+.modal .bx > .title{
 	color:  #47a7cf;
 	float: left;
 }
+
+
 
 .text{
 	width: 92%;
@@ -43,9 +50,7 @@ body {
 	border-top: groove;
 }
 
-.text-bold{
-	font-weight: bold;
-}
+
 
 .video{
 	margin: 0 auto;
