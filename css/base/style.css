@@ -26,9 +26,9 @@ body {
 
 
 
-#client1, #client2, #client3, #client4{
+.modal{
 	width: 100%;
-	height: 100%;
+	height: 220%;
 	background-color: white;
 	position: absolute;
 	z-index: 2;
@@ -37,18 +37,40 @@ body {
 .modal .bx > .title{
 	color:  #47a7cf;
 	float: left;
+	font-size: 30px;
 }
 
 
 
-.text{
+.modal > .text{
 	width: 92%;
 	padding: 2% 2%;
 	color: #9A9A9A;
 	margin-right: 2%; 
 	margin-left: 2%;
 	border-top: groove;
+	font-size: 24px;
 }
+
+@media (max-width: 610px){
+	.modal .bx > .title{
+		font-size: 24px;
+	}
+	.modal > .text{
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width: 420px){
+	.modal .bx > .title{
+		font-size: 16px;
+	}
+	.modal > .text{
+		font-size: 12px;
+	}
+}
+
 
 
 

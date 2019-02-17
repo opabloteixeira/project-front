@@ -17,7 +17,7 @@
 
 .gallery .item .image{
   cursor: pointer;
-  /* z-index: 9; */
+
 }
 
 .gallery .item {
@@ -53,6 +53,12 @@
   position: absolute;
   left: 0px;
   bottom: -17px;
+  font-size: 12px;
+  line-height: 12px;
+  /* color: #575757; */
+  font-family: "GothamBold";
+  font-weight: bold;
+  text-align: center;
 }
 
 

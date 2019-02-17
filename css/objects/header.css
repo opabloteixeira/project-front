@@ -124,16 +124,16 @@
 
 
 /* Responsive  */
-@media (max-width: 825px){
+/* @media (max-width: 825px){
 
     .header .wrap-title > .title{
-        font-size: 30px;
+        font-size: 39px;
     } 
 
-}
+} */
 
 
-@media (max-width: 750px){
+@media (max-width: 830px){
 
     .header .navigation .-item1{
         display: none;
@@ -151,7 +151,7 @@
     }
 
     .header .wrap-title > .title{
-        font-size: 30px;
+        font-size: 39px;
     } 
 
 }
@@ -159,7 +159,7 @@
 
 
 
-@media (max-width: 600px){
+@media (max-width: 610px){
 
     .header .wrap-title > .title{
         font-size: 28px;
