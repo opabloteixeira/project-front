@@ -7,31 +7,27 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Teste Frontend Prodigious</title>
 
-    <!-- CSS Calls -->
+    <!-- CSS Calls ITCSS-->
     <link rel="stylesheet" href="css/generic/reset.css">
     <link rel="stylesheet" href="css/base/style.css">
     <link rel="stylesheet" href="css/objects/header.css">
     <link rel="stylesheet" href="css/objects/menu-mobile.css">
-    <link rel="stylesheet" href="css/objects/gallery.min.css">
+    <link rel="stylesheet" href="css/objects/gallery.css">
     <link rel="stylesheet" href="css/objects/gallery.theme.css">
     <link rel="stylesheet" href="css/components/container.css">
+    <link rel="stylesheet" href="css/components/tooltip.css">
     <!-- End CSS Calls -->
-
-
-
-
-
-
 
 </head>
 
 <body>
 
-<!-- Header onload="initialize()"-->
+<!-- Header"-->
     <header class="header">
         <div class="container">
             <nav class="navigation">
                     <ul class="list">
+                        <span class="tooltip" title=""></span>
                         <li class="item  -item1">
                         <a class="action" target="_blank" href="http://prodigious.com">Site da Prodigious</a>
                         </li>
@@ -70,8 +66,8 @@
 
 <!-- Menu mobile -->
     <div id="flag-menu-x" class="menu-mobile">
-        <div class="bx"> <!-- apagar class dps -->
-            <button id="flag-menu" class="x"> <!-- botão x -->
+        <div class="bx -bx-menu-mobile"> 
+            <button id="flag-menu" class="x"> 
                 <div class="line li1"></div>
                 <div class="line li2"></div>
                 <div class="line li3"></div>
@@ -94,7 +90,7 @@
 <div id="client1" class="modal"> 
 
     <div class="bx" > 
-        <button id="slide1" class="x slide1"> <!-- botão x -->
+        <button id="slide1" class="x slide1"> 
             <div class="line li1"></div>
             <div class="line li2"></div>
             <div class="line li3"></div>
@@ -119,7 +115,7 @@
 <div id="client2" class="modal"> 
 
     <div class="bx" > 
-        <button id="slide2" class="x slide2"> <!-- botão x -->
+        <button id="slide2" class="x slide2"> 
             <div class="line li1"></div>
             <div class="line li2"></div>
             <div class="line li3"></div>
@@ -143,7 +139,7 @@
 <div id="client3" class="modal"> 
 
     <div class="bx" > 
-        <button id="slide3" class="x slide3"> <!-- botão x -->
+        <button id="slide3" class="x slide3"> 
             <div class="line li1"></div>
             <div class="line li2"></div>
             <div class="line li3"></div>
@@ -171,7 +167,7 @@
 <div id="client4" class="modal"> 
 
     <div class="bx" > 
-        <button id="slide4" class="x slide4"> <!-- botão x -->
+        <button id="slide4" class="x slide4"> 
             <div class="line li1"></div>
             <div class="line li2"></div>
             <div class="line li3"></div>
@@ -191,12 +187,6 @@
 
 </div>
 <!-- End Modal client 4 -->
-
-
-
-
-    
-
 
 
 
@@ -231,6 +221,7 @@
                 <a href="#item-3" class="control-button">• <span class="title-controls">Slide3</span></a>
                 <a href="#item-4" class="control-button">• <span class="title-controls">Slide4</span></a>
               </div>
+
             </div>
     </div>
     <!-- End Gallery -->
@@ -242,11 +233,6 @@
 		</div>
     </div> 
     
-
-
-
-
-
 
 
     <!-- javascript calls -->

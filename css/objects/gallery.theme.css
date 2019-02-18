@@ -1,16 +1,13 @@
 .gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
+  color: #575757;
+  /* color: rgba(255, 255, 255, 0.4); */
 }
 
 .gallery .control-button:hover {
-  color: white;
+  color:#575757;
   color: rgba(255, 255, 255, 0.8);
 }
 
-/*
-	Theme controls how everything looks in Gallery CSS.
-*/
 .gallery {
   position: relative;
 }
@@ -21,21 +18,16 @@
 }
 
 .gallery .item {
-  /* height: 400px; */
   overflow: hidden;
-  /* z-index: 1; */
   text-align: center;
-  /* background: #4d87e2; */
+
 }
 .gallery .controls {
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   width: 100%;
   text-align: center;
-  background-image: url(../../img/line-controls.png);
-  /* background-color: #80c5e2; */
-  background-size:cover;
-  height: 41px;
+  color: #575757;
   
 }
 .gallery .control-button {
@@ -46,22 +38,30 @@
   text-decoration: none;
   transition: color .1s;
   position: relative;
-  margin: -2px 6%;
+  margin: -22px 6%;
 }
 .gallery .title-controls{
   font-size: 10px;
   position: absolute;
-  left: 0px;
+  left: -7px;
   bottom: -17px;
   font-size: 12px;
   line-height: 12px;
-  /* color: #575757; */
   font-family: "GothamBold";
   font-weight: bold;
   text-align: center;
 }
 
 
+@media (max-width: 750px){
+  .gallery .controls {
+    background-image: url(../../img/points.png);
+    background-size:contain;
+    background-size: cover;
+    height: 5.7px;
+    background-repeat: no-repeat;
+  }
+}
 @media (max-width: 500px){
   .gallery .item{
     height: auto;
@@ -70,4 +70,5 @@
     height: auto;
     width: 90%;
   }
+
 }

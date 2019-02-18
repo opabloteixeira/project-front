@@ -36,21 +36,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
 const $pin = document.querySelector("#pin");
+const $tooltip = document.querySelector(".tooltip");
+
+
+$tooltip.addEventListener( "click", () =>{
+    $tooltip.style = "display:none";
+});
+
 
 $pin.addEventListener("click", () =>{
 
@@ -63,41 +56,26 @@ $pin.addEventListener("click", () =>{
     script.src = url;
     document.body.appendChild(script);
   });
-
 });
 
+
 function preencherDados(dados) {
-  alert(dados.address.city);  
+  const end = `Você está na Cidade: ${dados.address.city} \n Estado: ${dados.address.state}`;
+  $tooltip.title = end;
+  $tooltip.style = "display:block";
 }
 
-
-// navigator.geolocation.getCurrentPosition(function(posicao) {
-//     var url = "http://nominatim.openstreetmap.org/reverse?lat="+posicao.coords.latitude+"&lon="+posicao.coords.longitude+"&format=json&json_callback=preencherDados";
-
-//     var script = document.createElement('script');
-//     script.src = url;
-//     document.body.appendChild(script);
-// });
-
-
-
-// function preencherDados(dados) {
-//   alert(dados.address.city);  
-// }
 
 
 
 
 $(document).ready(function(){
 
-
-
-
     $(".menu-mobile").hide();
     $("#client1").hide();
-	$("#client2").hide();
-	$("#client3").hide();
-	$("#client4").hide();
+	  $("#client2").hide();
+	  $("#client3").hide();
+	  $("#client4").hide();
  
 
 
@@ -129,19 +107,9 @@ $(document).ready(function(){
 		// $("#video").hide("fast");
     });
 
-
-
-
-    // $('#img1').click(function() {	
-    //     alert("sfs");
-	// 	$("#client1").show();
-	// 	// $("#video").hide("fast");
-    // });
     
 });
 
-
-// console.log($menuMobile);
 
 
 
