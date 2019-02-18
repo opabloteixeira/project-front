@@ -1,48 +1,15 @@
 
-// const $header = document.querySelector(".header");
-
-// const $menuMobile = document.querySelector(".menu-mobile");
-
-// // $menuMobile.style.display = "none";
-
-// const $client1 = document.querySelector("#client1");
-// $client1.style.display = "none";
-
-// const $client2 = document.querySelector("#client2");
-// $client2.style.display = "none";
-
-// const $client3 = document.querySelector("#client3");
-// $client3.style.display = "none";
-
-// const $client4 = document.querySelector("#client4");
-// $client4.style.display = "none";
-
-
-// const $flagMenu = $header.querySelector("#flag-menu");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const $pin = document.querySelector("#pin");
 const $tooltip = document.querySelector(".tooltip");
 
 
+
 $tooltip.addEventListener( "click", () =>{
     $tooltip.style = "display:none";
 });
+
+
 
 
 $pin.addEventListener("click", () =>{
@@ -59,13 +26,12 @@ $pin.addEventListener("click", () =>{
 });
 
 
+
 function preencherDados(dados) {
   const end = `Você está na Cidade: ${dados.address.city} \n Estado: ${dados.address.state}`;
   $tooltip.title = end;
   $tooltip.style = "display:block";
 }
-
-
 
 
 
@@ -80,34 +46,28 @@ $(document).ready(function(){
 
 
     $('#flag-menu').click(function() { 	// hide + show menu
-		$(".menu-mobile").slideToggle();
+		  $(".menu-mobile").slideToggle();
     });
 
     $('#flag-menu-x').click(function() { // hide + show menu
-		$(".menu-mobile").slideToggle();
+		  $(".menu-mobile").slideToggle();
     });
     
     $('.slide1').click(function() {	
-		$("#client1").slideToggle("fast");
-		// $("#video").hide("fast");
+		  $("#client1").slideToggle("fast");
     });
 
     $('.slide2').click(function() {	
-		$("#client2").slideToggle("fast");
-		// $("#video").hide("fast");
+		  $("#client2").slideToggle("fast");
     });
 
     $('.slide3').click(function() {	
-		$("#client3").slideToggle("fast");
-		// $("#video").hide("fast");
+		  $("#client3").slideToggle("fast");
     });
 
     $('.slide4').click(function() {	
-		$("#client4").slideToggle("fast");
-		// $("#video").hide("fast");
+		  $("#client4").slideToggle("fast");
     });
-
-    
 });
 
 

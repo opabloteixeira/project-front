@@ -16,7 +16,7 @@
     height: 8%;
 }
 
-/*os .li fazem a configuração do botão x*/
+
 .li1 {
 	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
 	transform: rotate(-45deg) translate(-9px, 6px);
@@ -45,16 +45,6 @@
     position: absolute;
     z-index: 2;  
     display: none;
-
-    /* background-color: #fff;
-    color: #000;
-    width: 100vw;
-    padding: 40px 0 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-    transition: transform 300ms linear; */
 }
 
 .menu-mobile.-active{
@@ -77,8 +67,6 @@
 .item-menu:hover{
     background-color:  #47a7cf;
 }
-
-
 
 
 @media (max-width: 260px){

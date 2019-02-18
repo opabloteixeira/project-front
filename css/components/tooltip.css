@@ -30,9 +30,9 @@
     right: -298px;
     position: absolute;
     z-index: 99;
-    webkit-transform: rotate(268deg) scale(2.00, 2);;
-    -moz-transform: rotate(268deg) scale(2.00, 2);;
-    -ms-transform: rotate(268deg) scale(2.00, 2);;
+    webkit-transform: rotate(268deg) scale(2.00, 2);
+    -moz-transform: rotate(268deg) scale(2.00, 2);
+    -ms-transform: rotate(268deg) scale(2.00, 2);
     transform: rotate(268deg) scale(2.00, 2);
 }
 

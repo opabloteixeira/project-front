@@ -85,6 +85,10 @@
     margin-right: 25px;
   }
 
+  .header .item:hover{
+    color: #49ACD6;
+  }
+
 
   .header .item.-last {
     margin-right: 5px;
